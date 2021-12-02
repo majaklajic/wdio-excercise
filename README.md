@@ -1,0 +1,1 @@
+ Dolove i brijeg zabjelio je snijeg, sa saona kroz noć, naš se čuje smijeh, okićen i plah naš vranac juri svud
