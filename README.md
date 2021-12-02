@@ -1,0 +1,1 @@
+pročitaj me majstore
