@@ -1,0 +1,1 @@
+nesto s0tp mozda nikada necu vise otvoriti
