@@ -1,6 +1,32 @@
-describe('Open Wdio Website', () => {
-    it('Proper title is displayed', () => {
-        browser.url('https://webdriver.io/');
-        expect(browser).toHaveTitle('WebdriverIO · Next-gen browser and mobile automation test framework for Node.js | WebdriverIO');
+describe('shoutem pricing lista', () => {
+    it('postoji li h1 element', async () => {
+       await browser.url('https://shoutem.com/pricing/');
+       
+       const h1 = $('h1') ;
+
+       await expect(h1).toHaveText('There are more ways to create apps with Shoutem');
+
+ 
+
+
+    })
+});
+
+
+describe('button', () => {
+    it('je li klikabilan', async () => {
+
+
+       await browser.url('https://shoutem.com/apps/social-network/');
+
+       const buildnow = await $('a=Build now');
+       await buildnow.click();
+
+       const link = await $('.page-title');
+
+       await expect(link).toHaveText('Choose an app template');
+
+
+
     })
 })
