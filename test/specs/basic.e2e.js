@@ -14,7 +14,7 @@ describe('shoutem pricing lista', () => {
 
 
 describe('button', () => {
-    it('je li klikabilan', async () => {
+    it('je li klikabilan i otvara li se nova stranica heheheheheheheh', async () => {
 
 
        await browser.url('https://shoutem.com/apps/social-network/');
