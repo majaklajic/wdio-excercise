@@ -1,26 +1,3 @@
-//describe('Shoutem test', () => {
- //   it('Shoutem pircin page naslov', async () => {
-  //     await browser.url('https://shoutem.com/pricing/');
- //       const naslov = await $('h1');
-   //     await expect(naslov).toHaveText('There are more ways to create apps with Shoutem');
-        
-  //  });
-
-//   it('Shoutem social network landing page', async () => {
- //       await browser.url('https://shoutem.com/apps/social-network/');
-  //      const button = await $('.btn=Build now');
-   //     await button.click();
- //       const text = await $('.page-title');
-  //      await expect(text).toHaveText('Choose an app template');
-
-         
-         
-  //   });
- 
-
-//})
-
-
 describe('Openmrs test', () => {
     it('Openmrs login error', async () => {
         await browser.url('https://demo.openmrs.org/openmrs/login.htm');
@@ -54,17 +31,19 @@ describe('Openmrs test', () => {
         browser.url('https://demo.openmrs.org/openmrs/referenceapplication/home.page')
         await expect(browser).toHaveUrl('https://demo.openmrs.org/openmrs/referenceapplication/home.page')
         
+  
+        
+    });
+
+    it('Openmrs logout', async () => {
         const link = await $('a=Logout')
-
        await link.click()
-
-    
-
 
         browser.url('https://demo.openmrs.org/openmrs/login.htm')
         await expect(browser).toHaveUrl('https://demo.openmrs.org/openmrs/login.htm')
         
     });
+
 
 
   
