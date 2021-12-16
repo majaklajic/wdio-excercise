@@ -15,7 +15,6 @@ describe ('OpenMRS', () => {
     const errorMessage = await $('#error-message');
     await expect(errorMessage).toHaveText("Invalid username/password. Please try again.");
     
-    
     });
     
     it ('Login with correct credentials', async () => {
@@ -44,7 +43,5 @@ describe ('OpenMRS', () => {
     const Login = await $('.w-auto');
     await expect(Login).toHaveText("LOGIN");
     
-    
     });
-    
     })
