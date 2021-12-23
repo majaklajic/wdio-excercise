@@ -41,8 +41,8 @@ describe ('OpenMRS', () => {
         const LogoutButton = await $('a=Logout');
         await LogoutButton.click();
 
-        const Login = await $('.w-auto');
-        await expect(Login).toHaveText("LOGIN");        
+        const Laboratory = await $('#Laboratory');
+        await expect(Laboratory).toHaveText("Laboratory");        
         
 
         
