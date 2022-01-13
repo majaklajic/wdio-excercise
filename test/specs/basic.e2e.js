@@ -1,17 +1,28 @@
-describe('Open Shoutem Website', () => {
+describe('Open Anita Kontrec Website', () => {
     it('Proper title is displayed', async () => {
-        await browser.url('https://shoutem.com/pricing/');
+        browser.setWindowSize(1500, 1500);
+        await browser.url('https://www.anita-kontrec.com/');
 
         const title = await $('h1');
 
-        await expect(title).toHaveText('There are more ways to create apps with Shoutem');
+        await expect(title).toHaveText('Anita Kontrec');
     })
 
-    it('Ssocial Network', async () => {
-        await browser.url('https://shoutem.com/apps/social-network/');
-        const myButton = await $('a=Build now');
+    it('Artworks', async () => {
+        browser.setWindowSize(1500, 1500);
+        await browser.url('https://www.anita-kontrec.com/');
+        const myButton = await $('a=Artworks');
         await myButton.click();
-        const title = await $('h1');
-        await expect(title).toHaveText('Choose an app template');
+        const elem = await $('.footer-widgets-outer-wrapper');
+        await elem.scrollIntoView();
+        await browser.pause(3000);
+    })
+        it('Artworks', async () => {
+        browser.setWindowSize(1500, 1500);
+        await browser.url('https://www.anita-kontrec.com/');
+        const myButton = await $('a=Artworks');
+        await myButton.click();
+        const elem = await $('.footer-widgets-outer-wrapper');
+        await elem.isExisting();
     })
 })
