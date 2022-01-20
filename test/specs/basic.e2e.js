@@ -12,7 +12,6 @@ describe('Open Anita Kontrec Website', () => {
         await myButton.click();
         const elem = await $('.footer-widgets-outer-wrapper');
         await elem.scrollIntoView();
-        await browser.pause(3000);
     })
 
     it('Artworks hrvatski jezik (Radovi)', async () => {
@@ -22,7 +21,6 @@ describe('Open Anita Kontrec Website', () => {
         await myButton.click();
         const elem = await $('h1=Radovi');
         await elem.isExisting();
-        await browser.pause(3000);
     });
 
     it('Publikacije menu button', async () => {
@@ -31,13 +29,11 @@ describe('Open Anita Kontrec Website', () => {
         const elem = await $('.wp-block-button__link=PUBLIkacije');
         await elem.scrollIntoView();
         await elem.isExisting();
-        await browser.pause(3000);
     });
 
     it('Opening Image Gallery View opening - O meni', async () => {
         const myButton = await $('a=o meni');
         await myButton.click();
-        await browser.pause(3000);
 
         const button2 = await $('.fancybox');
         await button2.click();
