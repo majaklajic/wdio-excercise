@@ -16,6 +16,9 @@ describe('Open Anita Kontrec Website', () => {
         const elem = await $('.footer-widgets-outer-wrapper');
         await elem.scrollIntoView();
         await browser.pause(3000);
+
+
+        
     })
 
     it('Artworks', async () => {
