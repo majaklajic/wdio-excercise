@@ -7,7 +7,6 @@ describe('Open Anita Kontrec Website', () => {
     })
 
     it('Artworks menu button', async () => {
-        browser.setWindowSize(1500, 1500);
         await browser.url('https://www.anita-kontrec.com/');
         const myButton = await $('a=Artworks');
         await myButton.click();
@@ -16,7 +15,6 @@ describe('Open Anita Kontrec Website', () => {
     })
 
     it('Artworks hrvatski jezik (Radovi)', async () => {
-        browser.setWindowSize(1500, 1500);
         await browser.url('https://www.anita-kontrec.com/artworks');
         const myButton = await $('[alt="Hrvatski"]');
         await myButton.click();
