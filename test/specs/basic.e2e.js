@@ -3,6 +3,7 @@ describe('Open Anita Kontrec Website', () => {
         browser.setWindowSize(1500, 1500);
         await browser.url('https://www.anita-kontrec.com/');
         const title = await $('h1');
+        await expect(title).toBeDisplayed();
     })
 
     it('Artworks menu button', async () => {
