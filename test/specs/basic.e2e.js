@@ -4,3 +4,4 @@ describe('Open Wdio Website', () => {
         expect(browser).toHaveTitle('WebdriverIO · Next-gen browser and mobile automation test framework for Node.js | WebdriverIO');
     })
 })
+
