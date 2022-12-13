@@ -9,7 +9,7 @@ describe('Shoutem Web', async () => {
     });*/
 
 
-   /* it("test1", async () => {
+  /*  it("test1", async () => {
 
         await browser.url("https://www.saucedemo.com/");
         await $("#user-name").addValue("lovro");
