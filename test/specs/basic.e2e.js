@@ -9,17 +9,61 @@ describe('Shoutem Web', async () => {
     });*/
 
 
-    it("test social template page", async () => {
+   /* it("test1", async () => {
 
-        await browser.url("https://shoutem.com/apps/social-network/");
-        
-        const button = await $("a=Build now");
-        await browser.pause(3000);
+        await browser.url("https://www.saucedemo.com/");
+        await $("#user-name").addValue("lovro");
+        await $("#password").addValue("lovro");
+        const button = await $("#login-button");
+
         await button.click();
 
-        const header = await $("h1");
-        await expect(header).toHaveText("Choose an app template");
+        const LoginError = await $('[data-test="error"]');
+        await expect(LoginError).toHaveText("Epic sadface: Username and password do not match any user in this service");
+
+    }); 
+    */
+
+
+    /*
+    it("test2", async () => {
+
+        await browser.url("https://www.saucedemo.com/");
+        await $("#user-name").addValue("standard_user");
+        await $("#password").addValue("secret_sauce");
+        const button = await $("#login-button");
+
+        await button.click();
+
+        const inventar = await $("#inventory_container");
+        await expect(inventar).toBeDisplayed();
+
     });
+    */
+
+
+    /*
+    it("test3", async () => {
+
+        await browser.url("https://www.saucedemo.com/");
+        await $("#user-name").addValue("standard_user");
+        await $("#password").addValue("secret_sauce");
+        const button = await $("#login-button");
+
+        await button.click();
+
+        const inventar = await $("#inventory_container");
+        await expect(inventar).toBeDisplayed();
+        await $("#react-burger-menu-btn").click();
+        await $("#logout_sidebar_link").click();
+
+        const login = await $("#login-button");
+        await expect(login).toBeDisplayed();
+
+
+    }); 
+    */
+
 
 
 
