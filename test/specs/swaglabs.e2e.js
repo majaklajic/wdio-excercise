@@ -67,6 +67,8 @@ describe("Swag Labs", async () => {
         const logoutButton = await $("#logout_sidebar_link");
         await logoutButton.click();
 
-        await browser.pause(5000);
+        //Je li se odlogiao (login displayed)
+        const loginButton2 = await $(".submit-button btn_action");
+        await loginButton2.isDisplayed();
     });
 });
